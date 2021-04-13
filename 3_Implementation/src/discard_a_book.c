@@ -9,17 +9,18 @@ test_values delete_record(int id){
         printf("Unable to open the file\n");
         return fail;
     }else{
-        book_data discarded_book;
-        while(fread(&discarded_book, sizeof(discarded_book), 1, fptr1)!='\0'){
-            if(id==discarded_book.book_id){
+        book_data *discarded_book = (book_data*)malloc(sizeof(book_data));
+        while(fread(discarded_book, sizeof(book_data), 1, fptr1)!='\0'){
+            if(id==discarded_book->book_id){
                continue;
             }
-            fwrite(&discarded_book, sizeof(discarded_book), 1, fptr2);            
+            fwrite(discarded_book, sizeof(book_data), 1, fptr2);            
         }
         fclose(fptr1);
         fclose(fptr2);
+        free(discarded_book);
         remove("library_data.txt");
-        rename("temp_data.txt", "library_data.txt");
+        rename("temp_data.txt", "library_data.txt");  
         return pass;
     }   
 }

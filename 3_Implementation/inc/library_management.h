@@ -34,8 +34,8 @@ typedef struct book_data {
  * 
  */
 typedef enum test_values {
-    pass = 1;
-    fail = 0;
+    pass = 1,
+    fail = 0
 }test_values;
 
 /**

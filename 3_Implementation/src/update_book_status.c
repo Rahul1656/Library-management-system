@@ -35,7 +35,7 @@ test_values update_record(int id){
         fclose(fptr1);
         fclose(fptr2);
         remove("library_data.txt");
-        remane("temp_data.txt", "library_data.txt");
+        rename("temp_data.txt", "library_data.txt");
         return pass;
     }   
 }

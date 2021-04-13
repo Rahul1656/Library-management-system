@@ -2,7 +2,7 @@
 
 int main(){
     int task,success,ID;
-    printf("1. Add a new book\n2. Find a book\n3. Update the status of a book\n 4. Delete records of a book\n");
+    printf("1. Add a new book\n2. Find a book\n3. Update the status of a book\n4. Delete records of a book\n");
     printf("Enter the task number to perform one of the tasks\n");
     scanf("%d",&task);
     if(task == 1){

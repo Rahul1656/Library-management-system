@@ -1,4 +1,4 @@
-#include<library_management.h>
+#include"library_management.h"
 
 test_values enter_new_record(){
     FILE *fptr;
@@ -8,9 +8,8 @@ test_values enter_new_record(){
         return fail;
     }else{
         book_data new_book;
-        printf("\nEnter book id: ");
-        scanf("%d", &new_book.book_id);
-        printf("Enter title of book: ");
+        printf("Enter book id and title\n");
+        scanf("%d\n", &new_book.book_id);
         gets(new_book.book_title);
         strcpy(new_book.status, "Available");
         strcpy(new_book.member_name, "N/A");

@@ -4,7 +4,7 @@ test_values enter_new_record(){
     FILE *fptr;
     fptr = fopen("library_data.txt","wb");
     if(fptr==NULL){
-        printf("Unable to open the file\n")
+        printf("Unable to open the file\n");
         return fail;
     }else{
         book_data new_book;
@@ -19,6 +19,6 @@ test_values enter_new_record(){
         strcpy(new_book.due_date,"N/A");
         fwrite(&new_book, sizeof(new_book), 1, fptr);
         fclose(fptr);
-        return success;
+        return pass;
     }
 }

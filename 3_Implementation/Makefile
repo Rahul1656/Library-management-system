@@ -23,7 +23,7 @@ else
 endif
 
 all:
-	gcc $(SRC) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
+	gcc -I $(INC) $(SRC) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 run: all
-	$(call FixPath,$(PROJ_NAME).$(EXEC))
+	$(call FixPath,$(PROJECT_NAME).$(EXEC))

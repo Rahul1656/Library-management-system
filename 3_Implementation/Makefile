@@ -1,6 +1,7 @@
 PROJECT_NAME = Library_management_system
 
 SRC = main.c\
+src/view_all_books\
 src/add_new_book.c\
 src/discard_a_book.c\
 src/find_a_book.c\

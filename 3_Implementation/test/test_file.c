@@ -7,21 +7,20 @@ void setUp(){}
 void tearDown(){}
 
 void test_enter_new_record(void){
-    TEST_ASSERT_EQUAL(pass,enter_new_record());
+    TEST_ASSERT_EQUAL(pass,enter_new_record(900, "Wings of freedom"));
 }
 
 void test_view_a_record(void){
-    TEST_ASSERT_EQUAL(pass,view_a_record(300));
     TEST_ASSERT_EQUAL(fail,view_a_record(-1));
+    TEST_ASSERT_EQUAL(pass,view_a_record(900));
 }
 
 void test_update_record(void){
-    TEST_ASSERT_EQUAL(pass,update_record(300));
-    TEST_ASSERT_EQUAL(fail,update_record(-1));
+    TEST_ASSERT_EQUAL(pass,update_record(900, "issued", "21/01/21", "31/01/31", "Anupam Kumar Gupta", 123));
 }
 
 void test_delete_record(void){
-    TEST_ASSERT_EQUAL(pass,delete_record(300));
+    TEST_ASSERT_EQUAL(pass,delete_record(900));
 }
 
 int main(){
@@ -31,5 +30,6 @@ int main(){
     RUN_TEST(test_view_a_record);
     RUN_TEST(test_update_record);
     RUN_TEST(test_delete_record);
+    
     return UNITY_END();
 }

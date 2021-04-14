@@ -34,5 +34,6 @@ test_values update_record(int id, char new_status[], char new_date_of_issue[], c
         free(update_status);
         remove("library_data.txt");
         rename("temp_data.txt", "library_data.txt");
-    }   
+    }
+    return pass;   
 }

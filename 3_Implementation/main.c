@@ -33,6 +33,8 @@ int main(){
             printf("Enter member ID\n");
             scanf("%d", &new_member_id);
             success=update_record(ID, new_status, new_date_of_issue, new_due_date, new_member_name, new_member_id);
+        }else{
+            printf("No such book found\n");
         }
     }else if (task==4){
         printf("Enter the ID of the book to delete\n");

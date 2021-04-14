@@ -9,7 +9,6 @@
 #include"library_management.h"
 
 test_values update_record(int id, char new_status[], char new_date_of_issue[], char new_due_date[], char new_member_name[], int new_member_id){
-    int flag=0;
     FILE *fptr1;
     FILE *fptr2;
     fptr1 = fopen("library_data.txt","rb");
@@ -26,7 +25,6 @@ test_values update_record(int id, char new_status[], char new_date_of_issue[], c
                 strcpy(update_status->due_date,new_due_date);
                 strcpy(update_status->member_name,new_member_name);
                 update_status->member_id=new_member_id;
-                flag=1;
             }
             fwrite(update_status, sizeof(book_data), 1, fptr2);            
         }
@@ -35,11 +33,5 @@ test_values update_record(int id, char new_status[], char new_date_of_issue[], c
         free(update_status);
         remove("library_data.txt");
         rename("temp_data.txt", "library_data.txt");
-        if(flag == 1){
-            return pass;
-        }else{
-            printf("Specified book does not exist.\n");
-            return fail;
-        }
     }   
 }

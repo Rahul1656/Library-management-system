@@ -14,8 +14,8 @@ test_values view_all_records(){
     }else{
         book_data *book_to_find=(book_data*)malloc(sizeof(book_data));
         while(fread(book_to_find, sizeof(book_data), 1, fptr)!='\0'){
-            printf("Book ID: %d ", book_to_find->book_id);
-            printf("Title: %s\n\n", book_to_find->book_title);
+            printf("Book ID: %d", book_to_find->book_id);
+            printf("  Title: %s\n\n", book_to_find->book_title);
         }
         fclose(fptr);
         free(book_to_find);

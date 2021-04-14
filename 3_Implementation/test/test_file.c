@@ -16,7 +16,7 @@ void test_view_a_record(void){
 }
 
 void test_update_record(void){
-    TEST_ASSERT_EQUAL(pass,update_record(900, "issued", "21/01/21", "31/01/31", "Anupam Kumar Gupta", 123));
+    TEST_ASSERT_EQUAL(pass,update_record(900, "issued", "21/01/21", "31/01/31", "Anupam","Gupta", 123));
 }
 
 void test_delete_record(void){

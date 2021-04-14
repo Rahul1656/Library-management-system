@@ -16,7 +16,8 @@ test_values enter_new_record(int id, char title[]){
         new_book->book_id = id;
         strcpy(new_book->book_title, title);
         strcpy(new_book->status, "Available");
-        strcpy(new_book->member_name, "N/A");
+        strcpy(new_book->member_first_name, "N/A");
+        strcpy(new_book->member_last_name, "N/A");
         new_book->member_id=0;
         strcpy(new_book->date_of_issue,"N/A");
         strcpy(new_book->due_date,"N/A");

@@ -7,7 +7,7 @@
  */
 int main(){
     int task, success, ID, new_member_id;
-    char new_status[10], new_date_of_issue[10], new_due_date[10], new_member_name[10], new_title[20];
+    char new_status[10], new_date_of_issue[10], new_due_date[10], new_member_first_name[10],new_member_last_name[10], new_title[20];
     printf("1. Add a new book\n2. Find a book\n3. Update the status of a book\n4. Delete records of a book\n");
     printf("Enter the task number to perform one of the tasks\n");
     scanf("%d",&task);
@@ -33,11 +33,13 @@ int main(){
             scanf("%s", new_date_of_issue);
             printf("Enter new due date\n");
             scanf("%s", new_due_date);
-            printf("Enter member name\n");
-            scanf("%s", new_member_name);
+            printf("Enter first name of member\n");
+            scanf("%s", new_member_first_name);
+            printf("Enter last name of member\n");
+            scanf("%s", new_member_last_name);
             printf("Enter member ID\n");
             scanf("%d", &new_member_id);
-            success=update_record(ID, new_status, new_date_of_issue, new_due_date, new_member_name, new_member_id);
+            success=update_record(ID, new_status, new_date_of_issue, new_due_date, new_member_first_name,new_member_last_name, new_member_id);
         }
     }else if (task==4){
         printf("Enter the ID of the book to delete\n");

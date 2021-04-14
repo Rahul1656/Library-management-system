@@ -6,8 +6,13 @@ void setUp(){}
 
 void tearDown(){}
 
+
 void test_enter_new_record(void){
     TEST_ASSERT_EQUAL(pass,enter_new_record(900, "Wings of freedom"));
+}
+
+void test_view_all_records(void){
+    TEST_ASSERT_EQUAL(pass,view_all_records());
 }
 
 void test_view_a_record(void){
@@ -30,6 +35,7 @@ int main(){
     RUN_TEST(test_view_a_record);
     RUN_TEST(test_update_record);
     RUN_TEST(test_delete_record);
+    RUN_TEST(test_view_all_records);
     
     return UNITY_END();
 }

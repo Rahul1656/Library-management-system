@@ -1,7 +1,7 @@
 /**
  * @file librarymanagement.h
- * @author your name (you@domain.com)
- * @brief 
+ * @author Anupam (you@domain.com)
+ * @brief header files for managing data of a library
  * @version 0.1
  * @date 2021-04-12
  * 

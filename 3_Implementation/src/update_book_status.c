@@ -25,7 +25,7 @@ test_values update_record(int id, char new_status[], char new_date_of_issue[], c
                 strcpy(update_status->due_date,new_due_date);
                 strcpy(update_status->member_name,new_member_name);
                 update_status->member_id=new_member_id;
-                printf("Reached if\n")
+                printf("Reached if\n");
             }
             fwrite(update_status, sizeof(book_data), 1, fptr2);            
         }

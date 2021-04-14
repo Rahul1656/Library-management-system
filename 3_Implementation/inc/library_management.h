@@ -59,7 +59,7 @@ test_values enter_new_record();
  * @param id 
  * @return test_values 
  */
-test_values update_record(int id);
+test_values update_record(int id, char new_status[], char new_date_of_issue[], char new_due_date[], char new_member_name[], int new_member_id);
 
 /**
  * @brief funtion to denote discarded books

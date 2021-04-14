@@ -1,1 +1,1 @@
-# Library-management-system
+[![C/C++ CI - Build Status](https://github.com/256142/Library-management-system/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/256142/Library-management-system/actions/workflows/c-cpp.yml)

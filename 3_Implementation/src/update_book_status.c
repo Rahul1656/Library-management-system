@@ -47,6 +47,4 @@ test_values update_record(int id){
         rename("temp_data.txt", "library_data.txt");
         return pass;
     }
-    printf("Unable to find the record\n");
-    return fail;   
 }

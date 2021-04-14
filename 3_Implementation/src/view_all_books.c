@@ -19,6 +19,6 @@ test_values view_all_records(){
         }
         fclose(fptr);
         free(book_to_find);
-        return fail;
+        return pass;
     }   
 }

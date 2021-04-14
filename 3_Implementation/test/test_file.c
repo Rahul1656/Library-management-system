@@ -16,7 +16,7 @@ void test_view_all_records(void){
 }
 
 void test_view_a_record(void){
-    TEST_ASSERT_EQUAL(fail,view_a_record(-1));
+    TEST_ASSERT_EQUAL(fail,view_a_record(-2));
     TEST_ASSERT_EQUAL(pass,view_a_record(900));
 }
 

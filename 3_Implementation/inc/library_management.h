@@ -70,4 +70,11 @@ test_values update_record(int id, char new_status[], char new_date_of_issue[], c
  */
 test_values delete_record(int id);
 
+/**
+ * @brief function to view all the books
+ * 
+ * @return test_values 
+ */
+test_values view_all_records();
+
 #endif

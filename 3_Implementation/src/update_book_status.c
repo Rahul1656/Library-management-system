@@ -1,5 +1,11 @@
 #include"library_management.h"
 
+/**
+ * @brief function to update the information related to a book
+ * 
+ * @param id 
+ * @return test_values 
+ */
 test_values update_record(int id){
     char new_status[10], new_date_of_issue[10], new_due_date[10], new_member_name[10];
     int new_member_id;

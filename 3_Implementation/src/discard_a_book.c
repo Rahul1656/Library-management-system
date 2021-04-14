@@ -1,5 +1,11 @@
 #include"library_management.h"
 
+/**
+ * @brief function to remove the records of a book
+ * 
+ * @param id 
+ * @return test_values 
+ */
 test_values delete_record(int id){
     FILE *fptr1;
     FILE *fptr2;

@@ -1,5 +1,10 @@
 #include"library_management.h"
 
+/**
+ * @brief function to add new books to library
+ * 
+ * @return test_values 
+ */
 test_values enter_new_record(){
     FILE *fptr;
     fptr = fopen("library_data.txt","ab");

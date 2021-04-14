@@ -1,5 +1,11 @@
 #include"library_management.h"
 
+/**
+ * @brief function to find the details about a book
+ * 
+ * @param id 
+ * @return test_values 
+ */
 test_values view_a_record(int id){
     FILE *fptr;
     fptr = fopen("library_data.txt","rb");

@@ -1,5 +1,10 @@
 #include"library_management.h"
 
+/**
+ * @brief main function of the project
+ * 
+ * @return int 
+ */
 int main(){
     int task,success,ID;
     printf("1. Add a new book\n2. Find a book\n3. Update the status of a book\n4. Delete records of a book\n");

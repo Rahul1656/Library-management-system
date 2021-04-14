@@ -7,12 +7,17 @@
  */
 int main(){
     int task, success, ID, new_member_id;
-    char new_status[10], new_date_of_issue[10], new_due_date[10], new_member_name[10];
+    char new_status[10], new_date_of_issue[10], new_due_date[10], new_member_name[10], new_title[20];
     printf("1. Add a new book\n2. Find a book\n3. Update the status of a book\n4. Delete records of a book\n");
     printf("Enter the task number to perform one of the tasks\n");
     scanf("%d",&task);
     if(task == 1){
-        success = enter_new_record();
+        printf("Enter the ID of new book\n");
+        scanf("%d",&ID);
+        fflush(stdin);
+        printf("Enter the title of new book\n");
+        gets(new_title);
+        success = enter_new_record(ID, new_title);
     }else if(task == 2){
         printf("Enter the ID of the book to search\n");
         scanf("%d",&ID);

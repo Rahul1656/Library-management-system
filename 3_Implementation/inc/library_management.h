@@ -51,7 +51,7 @@ test_values view_a_record(int id);
  * 
  * @return test_values 
  */
-test_values enter_new_record();
+test_values enter_new_record(int id, char title[]);
 
 /**
  * @brief function to update the status of a book

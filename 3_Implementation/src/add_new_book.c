@@ -5,7 +5,7 @@
  * 
  * @return test_values 
  */
-test_values enter_new_record(){
+test_values enter_new_record(int id, char title[]){
     FILE *fptr;
     fptr = fopen("library_data.txt","ab");
     if(fptr==NULL){
@@ -13,11 +13,8 @@ test_values enter_new_record(){
         return fail;
     }else{
         book_data *new_book = (book_data*)malloc(sizeof(book_data));
-        printf("Enter book id: ");
-        scanf("%d", &new_book->book_id);
-        fflush(stdin);
-        printf("Enter book title: ");
-        gets(new_book->book_title);
+        new_book->book_id = id;
+        strcpy(new_book->book_title, title);
         strcpy(new_book->status, "Available");
         strcpy(new_book->member_name, "N/A");
         new_book->member_id=0;

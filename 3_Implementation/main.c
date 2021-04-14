@@ -53,7 +53,7 @@ int main(){
     if(success == pass){
         printf("Operation successful\n");
     }else if(success == fail){
-        printf("Operation unseccessful");
+        printf("Operation unseccessful\n");
     }else{
         printf("Error condition\n");
     }

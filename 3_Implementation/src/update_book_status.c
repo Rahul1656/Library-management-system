@@ -6,6 +6,8 @@
  * @param id 
  * @return test_values 
  */
+#include"library_management.h"
+
 test_values update_record(int id){
     char new_status[10], new_date_of_issue[10], new_due_date[10], new_member_name[10];
     int new_member_id;
@@ -44,5 +46,7 @@ test_values update_record(int id){
         remove("library_data.txt");
         rename("temp_data.txt", "library_data.txt");
         return pass;
-    }   
+    }
+    printf("Unable to find the record\n");
+    return fail;   
 }

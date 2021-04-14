@@ -49,7 +49,7 @@ test_values update_record(int id){
         if(flag == 1){
             return pass;
         }else{
-            printf("Unable to find the record\n");
+            printf("Specified book does not exist.\n");
             return fail;
         }
     }   

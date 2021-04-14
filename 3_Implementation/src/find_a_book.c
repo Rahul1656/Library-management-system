@@ -30,6 +30,7 @@ test_values view_a_record(int id){
         }
         fclose(fptr);
         free(book_to_find);
+        printf("Specified book does not exist\n");
         return fail;
     }   
 }
